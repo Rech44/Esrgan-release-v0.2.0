@@ -1,0 +1,3 @@
+ffmpeg -i onepiece_demo.mp4 -i onepieceframeshd\frames%04d.png -c:v libx264 -preset veryslow -tune animation -profile high -c:a aac -b:a 317k -b:v 34000k -map 0:a:0 -map 1:v:0 -r 23.98 video.mp4
+
+ffmpeg -i "C:\Users\te cambie la contra\Downloads\Anime4KCPP_GUI-1.12.0-2.5.0-Win64-msvc\GUI\Anime4KCPP_GUI\output\output_anime4kcpp_%06d.png" -c:v libx264 -preset veryslow -tune animation -profile high -b:v 34000k -r 23.98 video.mp4
